@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira Virtual</title>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Carteira Virtual</h1>
+        <h5>Calcule e controle seus gastos de forma fácil e prática!</h5>
+    </header>
+    <main>
+        <section class="topButton">
+            <button type="button" class="button" id="registerButton">Inserir Transação</button>
+            <button type="button" class="button" id="detailButton">Detalhar Transações</button>
+        </section>
+        <section class="tabela">
+            <table class="gastos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td placeholder="Supermercado"></td>
+                        <td placeholder="Supermercado"></td>
+                        <td placeholder="Supermercado"></td>
+                        <td></td>
+                        <td>
+                            <button type="button" class="button" id="editButton">Editar</button>
+                            <button type="button" class="button" id="deletButton">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="janela" id="janela">
+            <header class="header">
+                <h1>Nova Transação</h1>
+                <span class="janelaFecha" id="janelaFecha">&#10006;</span>
+            </header>
+            <form class="novaTransacao" id="novaTransacao">
+                <label name="inputNome">Nome:</label>
+                <input type="text" class="fillField" id="inputNome" placeholder="Nome">
+                <label name="inputValor">Valor:</label>
+                <input type="number" class="fillField" id="inputValor" placeholder="R$ 25,00">
+                <label name="inputData">Data:</label>
+                <input type="date" class="fillField" id="inputData" placeholder="05/02/2022">
+            </form>
+            <footer>
+                <button type="button" class="button" id="saveButton">Salvar</button>
+                <button type="button" class="button" id="exitButton">Sair</button>
+            </footer>
+        </section>
+    </main>
+    <footer>
+        <h5>Criado por Mylenna Rodrigues</h5>
+    </footer>
+</body>
+</html>
