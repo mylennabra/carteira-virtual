@@ -1,0 +1,23 @@
+@use '../variables/index.scss' as a;
+@use '../util/index.scss' as *;
+
+.mainHeader{
+    background-color: a.$bg-color1;
+    @extend %align-center;
+    flex-direction: column;
+}
+
+.windowHeader{
+    background-color: a.$bg-color1;
+    @extend %align-center;
+    color: a.$title-color;
+}
+
+.titleMainHeader{
+    &:nth-child(1){
+        color: a.$title-color;
+    }
+    &:nth-child(2){
+        color: a.$blue;
+    }
+}

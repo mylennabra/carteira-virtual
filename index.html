@@ -11,17 +11,20 @@
 
 </head>
 <body>
-    <header class="header">
-        <h1>Carteira Virtual</h1>
-        <h5>Calcule e controle seus gastos de forma fácil e prática!</h5>
+    <header class="mainHeader">
+        <h1 class="titleMainHeader">Carteira Virtual</h1>
+        <h5 class="titleMainHeader">Calcule e controle seus gastos de forma fácil e prática!</h5>
     </header>
     <main>
+        <section class="firstPage">
+
+
         <section class="topButton">
             <button type="button" class="button" id="registerButton">Inserir Transação</button>
             <button type="button" class="button" id="detailButton">Detalhar Transações</button>
         </section>
-        <section class="tabela">
-            <table class="gastos">
+        <section class="table">
+            <table class="spent">
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -33,8 +36,8 @@
                 <tbody>
                     <tr>
                         <td placeholder="Supermercado"></td>
-                        <td placeholder="Supermercado"></td>
-                        <td placeholder="Supermercado"></td>
+                        <td placeholder="25,00"></td>
+                        <td placeholder="02/02/2022"></td>
                         <td></td>
                         <td>
                             <button type="button" class="button" id="editButton">Editar</button>
@@ -44,12 +47,15 @@
                 </tbody>
             </table>
         </section>
+    </section>
         <section class="window" id="window">
-            <header class="header">
-                <h1>Nova Transação</h1>
+            <header class="windowHeader">
+                <h1 class="titleWindowHeader">Nova Transação</h1>
                 <span class="closeWindow" id="closeWindow">&#10006;</span>
             </header>
-            <form class="novaTransacao" id="novaTransacao">
+
+            <!--HeroSection-->
+            <form class="newTransaction" id="newTransaction">
                 <label name="inputName">Nome:</label>
                 <input type="text" class="fillField" id="inputName" placeholder="Nome">
                 <label name="inputPrice">Valor:</label>
@@ -63,8 +69,8 @@
             </footer>
         </section>
     </main>
-    <footer>
-        <h5>Criado por Mylenna Rodrigues</h5>
+    <footer class="credits">
+        <h5>Criado por Mylenna Rodrigues | mylenna.bra@gmail.com</h5>
     </footer>
 </body>
 </html>

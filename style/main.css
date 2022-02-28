@@ -1,33 +1,87 @@
+.mainHeader, .windowHeader, .table, .firstPage {
+  display: flex;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #e6e6e6;
+  background-color: #e7edea;
+  height: 500px;
+  width: auto;
 }
 
-.gastos {
+.spent {
   color: black;
 }
 
-.janela {
-  color: black;
+.table {
+  height: auto;
+  width: 50%;
+  justify-content: space-evenly;
 }
-.janela header {
-  color: white;
-  background-color: #700e70;
+
+.firstPage {
+  background-color: #f6f8f7;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 10px;
+  border: 10px;
+  padding: 10px;
+  margin: 20% 0 0 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.window {
+  display: none;
 }
 
 .button {
-  color: white;
-  background-color: #700e70;
+  color: black;
+  background-color: #ffc52c;
   padding: 5px;
   border-radius: 10px;
   border-color: black;
 }
 .button:hover {
   cursor: pointer;
+  background-color: #ffd35f;
+}
+
+.mainHeader {
+  background-color: #fb0c06;
+  flex-direction: column;
+}
+
+.windowHeader {
+  background-color: #fb0c06;
+  color: white;
+}
+
+.titleMainHeader:nth-child(1) {
+  color: white;
+}
+.titleMainHeader:nth-child(2) {
+  color: #030d4f;
+}
+
+.credits {
+  color: #494949;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

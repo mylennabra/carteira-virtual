@@ -2,7 +2,7 @@
 @use '../variables/colors.scss' as a;
 
 .button{
-    color: a.$color;
+    color: a.$text-color;
     background-color: a.$bg-color;
     padding: 5px;
     border-radius: 10px;
@@ -10,5 +10,6 @@
 
     &:hover{
         cursor: pointer;
+        background-color: lighten(a.$bg-color, 10%);
     }
 }
