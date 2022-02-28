@@ -1,0 +1,14 @@
+@use '../util/functions.scss' as *;
+@use '../variables/colors.scss' as a;
+
+.button{
+    color: a.$color;
+    background-color: a.$bg-color;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: a.$border-color;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
