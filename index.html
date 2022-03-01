@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carteira Virtual</title>
 
-    <base href="/style/main.css">
-    <link type="text/css" rel="stylesheet" href="main.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carteira Virtual</title>
 
-</head>
-<body>
-    <header class="mainHeader">
-        <h1 class="titleMainHeader">Carteira Virtual</h1>
-        <h5 class="titleMainHeader">Calcule e controle seus gastos de forma fácil e prática!</h5>
-    </header>
-    <main>
-        <section class="firstPage">
+        <base href="/style/main.css">
+        <link type="text/css" rel="stylesheet" href="main.css">
+    </head>
 
+    <body>
+        <header class="mainHeader">
+            <h1 class="titleMainHeader">Carteira Virtual</h1>
+            <h5 class="titleMainHeader">Calcule e controle seus gastos de forma fácil e prática!</h5>
+        </header>
+        <main>
+            <section class="firstPage">
 
-        <section class="topButton">
-            <button type="button" class="button" id="registerButton">Inserir Transação</button>
-            <button type="button" class="button" id="detailButton">Detalhar Transações</button>
-        </section>
-        <section class="table">
-            <table class="spent">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Valor</th>
-                        <th>Data</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td placeholder="Supermercado"></td>
-                        <td placeholder="25,00"></td>
-                        <td placeholder="02/02/2022"></td>
-                        <td></td>
-                        <td>
-                            <button type="button" class="button" id="editButton">Editar</button>
-                            <button type="button" class="button" id="deletButton">Excluir</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </section>
-        <section class="window" id="window">
-            <header class="windowHeader">
-                <h1 class="titleWindowHeader">Nova Transação</h1>
-                <span class="closeWindow" id="closeWindow">&#10006;</span>
-            </header>
+                <section class="topButton">
+                    <button type="button" class="button" id="registerButton">Inserir Transação</button>
+                    <button type="button" class="button" id="detailButton">Detalhar Transações</button>
+                </section>
+
+                <!--spentTable-->
+                <section class="table">
+                    <table class="spent">
+                        <thead >
+                            <tr class="thead">
+                                <th>Nome</th>
+                                <th>Valor</th>
+                                <th>Data</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td placeholder="Supermercado"></td>
+                                <td placeholder="25,00"></td>
+                                <td placeholder="02/02/2022"></td>
+                                <td class="manipulationButtons">
+                                    <button type="button" class="button" id="editButton">Editar</button>
+                                    <button type="button" class="button" id="deletButton">Excluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
 
             <!--HeroSection-->
-            <form class="newTransaction" id="newTransaction">
-                <label name="inputName">Nome:</label>
-                <input type="text" class="fillField" id="inputName" placeholder="Nome">
-                <label name="inputPrice">Valor:</label>
-                <input type="number" class="fillField" id="inputPrice" placeholder="R$ 25,00">
-                <label name="inputDate">Data:</label>
-                <input type="date" class="fillField" id="inputDate" placeholder="05/02/2022">
-            </form>
-            <footer>
-                <button type="button" class="button" id="saveButton">Salvar</button>
-                <button type="button" class="button" id="exitButton">Sair</button>
-            </footer>
-        </section>
-    </main>
-    <footer class="credits">
-        <h5>Criado por Mylenna Rodrigues | mylenna.bra@gmail.com</h5>
-    </footer>
-</body>
+            <section class="window" id="window">
+                <header class="windowHeader">
+                    <h1 class="titleWindowHeader">Nova Transação</h1>
+                    <span class="closeWindow" id="closeWindow">&#10006;</span>
+                </header>
+
+                <form class="newTransaction" id="newTransaction">
+                    <label name="inputName">Nome:</label>
+                    <input type="text" class="fillField" id="inputName" placeholder="Nome">
+                    <label name="inputPrice">Valor:</label>
+                    <input type="number" class="fillField" id="inputPrice" placeholder="R$ 25,00">
+                    <label name="inputDate">Data:</label>
+                    <input type="date" class="fillField" id="inputDate" placeholder="05/02/2022">
+                </form>
+
+                <footer class="bottomButton">
+                    <button type="button" class="button" id="saveButton">Salvar</button>
+                    <button type="button" class="button" id="exitButton">Sair</button>
+                </footer>
+            </section>
+        </main>
+
+        <footer class="credits">
+            <h5>Criado por Mylenna Rodrigues | mylenna.bra@gmail.com</h5>
+        </footer>
+    </body>
 </html>
