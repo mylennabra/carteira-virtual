@@ -5,6 +5,22 @@
     background-color: a.$bg-color1;
     @extend %align-center;
     flex-direction: column;
+    justify-content: center;
+    min-height: a.$size*6;
+    max-height: a.$size*8;
+    padding: 5% 5% 5% 0%;
+}
+
+.titleMainHeader{
+    text-align: center;
+    &:nth-child(1){
+        color: a.$title-color;
+        font-size: a.$font-size*3;
+    }
+    &:nth-child(2){
+        color: a.$subtitle;
+        font-size: a.$font-size*2;
+    }
 }
 
 .windowHeader{
@@ -13,11 +29,4 @@
     color: a.$title-color;
 }
 
-.titleMainHeader{
-    &:nth-child(1){
-        color: a.$title-color;
-    }
-    &:nth-child(2){
-        color: a.$blue;
-    }
-}
+//@include 
