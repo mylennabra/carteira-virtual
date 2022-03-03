@@ -6,75 +6,70 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carteira Virtual</title>
-
         <base href="/style/main.css">
         <link type="text/css" rel="stylesheet" href="main.css">
     </head>
 
     <body>
-        <header class="mainHeader">
-            <h1 class="titleMainHeader">Carteira Virtual</h1>
-            <h5 class="titleMainHeader">Calcule e controle seus gastos de forma fácil e prática!</h5>
+        <header class="body__header">
+            <h1 class="body__header--title">Carteira Virtual</h1>
+            <h5 class="body__header--subtitle">Calcule e controle seus gastos de forma fácil e prática!</h5>
         </header>
-        <main>
-            <section class="firstPage">
+        <main class="main-content">
+            <!-- FirstSection -->
+                <!--spentTableSection-->
+                <section class="main-content__table">
+                    <button type="button" class="main-content__tableSection--button" id="registerButton">Inserir Transação</button>
+                    <button type="button" class="main-content__tableSection--button" id="detailButton">Detalhar Transações</button>
+                    <!--spentTable-->
+                    <table class="main-content__tableContent">
 
-                <section class="topButton">
-                    <button type="button" class="button" id="registerButton">Inserir Transação</button>
-                    <button type="button" class="button" id="detailButton">Detalhar Transações</button>
-                </section>
-
-                <!--spentTable-->
-                <section class="table">
-                    <table class="spent">
-                        <thead >
-                            <tr class="thead">
+                            <tr class="main-content__tableContent--thead">
                                 <th>Nome</th>
                                 <th>Valor</th>
                                 <th>Data</th>
                                 <th>Ação</th>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td placeholder="Supermercado"></td>
-                                <td placeholder="25,00"></td>
-                                <td placeholder="02/02/2022"></td>
-                                <td class="manipulationButtons">
-                                    <button type="button" class="button" id="editButton">Editar</button>
-                                    <button type="button" class="button" id="deletButton">Excluir</button>
+
+                            <tr class="main-content__tableContent--tbody">
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>
+                                    <button type="button" class="main-content__tableContent--tbody--button" id="editButton">Editar</button>
+                                    <button type="button" class="main-content__tableContent--tbody--button" id="deletButton">Excluir</button>
                                 </td>
                             </tr>
-                        </tbody>
                     </table>
                 </section>
-            </section>
+                
 
-            <!--HeroSection-->
-            <section class="window" id="window">
-                <header class="windowHeader">
-                    <h1 class="titleWindowHeader">Nova Transação</h1>
-                    <span class="closeWindow" id="closeWindow">&#10006;</span>
-                </header>
+            <!--SecondSection-->
+                <!--NewTransactionSection-->
+                <section class="main-content__windowSection" id="windowSection">
+                    <header class="main-content__windowSection--header">
+                        <h1 class="main-content__windowSection--header--title">Nova Transação</h1>
+                        <span class="main-content__windowSection--header--subtitle" id="closeWindow">&#10006;</span>
+                    </header>
 
-                <form class="newTransaction" id="newTransaction">
-                    <label name="inputName">Nome:</label>
-                    <input type="text" class="fillField" id="inputName" placeholder="Nome">
-                    <label name="inputPrice">Valor:</label>
-                    <input type="number" class="fillField" id="inputPrice" placeholder="R$ 25,00">
-                    <label name="inputDate">Data:</label>
-                    <input type="date" class="fillField" id="inputDate" placeholder="05/02/2022">
-                </form>
+                    <form class="main-content__windowSection--form" id="newTransaction">
+                        <label name="inputName">Nome:</label>
+                        <input type="text" class="main-content__windowSection--form--fillField" id="inputName" placeholder="Nome">
+                        <label name="inputPrice">Valor:</label>
+                        <input type="number" class="main-content__windowSection--form--fillField" id="inputPrice" placeholder="R$ 25,00">
+                        <label name="inputDate">Data:</label>
+                        <input type="date" class="main-content__windowSection--form--fillField" id="inputDate" placeholder="05/02/2022">
+                    </form>
 
-                <footer class="bottomButton">
-                    <button type="button" class="button" id="saveButton">Salvar</button>
-                    <button type="button" class="button" id="exitButton">Sair</button>
-                </footer>
-            </section>
+                    <footer class="main-content__windowSection--footer--bottomButton">
+                        <button type="button" class="main-content__windowSection--footer--bottomButton" id="saveButton">Salvar</button>
+                        <button type="button" class="main-content__windowSection--footer--bottomButton" id="exitButton">Sair</button>
+                    </footer>
+                </section>
         </main>
 
-        <footer class="credits">
-            <h5>Criado por Mylenna Rodrigues | mylenna.bra@gmail.com</h5>
+        <footer class="footer">
+            <h5>Criado por Mylenna Rodrigues &copy; | mylenna.bra@gmail.com</h5>
         </footer>
     </body>
 </html>
