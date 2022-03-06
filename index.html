@@ -20,27 +20,32 @@
 
                 <!--spentTableSection-->
                 <section class="main-content__table">
-                    <button type="button" class="button main-content__table--button" id="registerButton">Inserir Transação</button>
-                    
+                    <div class="main-content__table--header">
+                        <button type="button" class="button main-content__table--header--button" id="registerButton">Inserir Transação</button>
+                        <h1 class="main-content__table--header--title">Gastos e Ganhos</h1>
+                    </div>
+
                     <!--spentTable-->
                     <table class="main-content__table--content">
-
+                        <thead>
                             <tr class="main-content__table--content--thead">
-                                <th>Nome</th>
-                                <th>Valor</th>
-                                <th>Data</th>
-                                <th>Ação</th>
+                                <th class="thead--cell">Nome</th>
+                                <th class="thead--cell">Valor</th>
+                                <th class="thead--cell">Data</th>
+                                <th class="thead--cell">Ação</th>
                             </tr>
-
+                        </thead>
+                        <tbody>
                             <tr class="main-content__table--content--tbody">
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>
+                                <td class="tbody--cell">Supermercado</td>
+                                <td class="tbody--cell">25,00</td>
+                                <td class="tbody--cell">02/03/2022</td>
+                                <td class="tbody--cell">
                                     <button type="button" class="button main-content__table--content--tbody--button" id="editButton">Editar</button>
                                     <button type="button" class="button main-content__table--content--tbody--button" id="deletButton">Excluir</button>
                                 </td>
                             </tr>
+                        </tbody>
                     </table>
                 </section>
                 
@@ -49,17 +54,23 @@
                 <section class="main-content__modalSection" id="modalSection">
                     <section class="main-content__modalSection--content">
                         <header class="main-content__modalSection--content--header">
-                            <span class="main-content__modalSection--content--header--icon" id="closeModal"> &#10006; </span>
+                            <span class="main-content__modalSection--content--header--icon" id="closeModal" title="Sair"> &#10006; </span>
                             <h1 class="main-content__modalSection--content--header--title">Nova Transação</h1>
                         </header>
 
                         <form class="main-content__modalSection--content--form" id="newTransaction">
-                            <label name="inputName">Nome:</label>
-                            <input type="text" class="main-content__modalSection--content--form--fillField" id="inputName" placeholder="Nome">
-                            <label name="inputPrice">Valor:</label>
-                            <input type="number" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00">
-                            <label name="inputDate">Data:</label>
-                            <input type="date" class="main-content__modalSection--content--form--fillField" id="inputDate" placeholder="05/02/2022">
+                             
+                                <label name="inputName">Nome:</label>
+                                <input type="text" class="main-content__modalSection--content--form--fillField" id="inputName" placeholder="Nome">
+                            
+                                   
+                                <label name="inputPrice">Valor:</label>
+                                <input type="number" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00">
+                            
+                             
+                                <label name="inputDate">Data:</label>
+                                <input type="date" class="main-content__modalSection--content--form--fillField" id="inputDate" placeholder="05/02/2022">
+                            
                         </form>
 
                         <footer class="main-content__modalSection--footer">
