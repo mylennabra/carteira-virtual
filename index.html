@@ -8,6 +8,7 @@
         <title>Carteira Virtual</title>
         <base href="/style/main.css">
         <link type="text/css" rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="/main.js"></script>
     </head>
 
     <body>
@@ -16,55 +17,56 @@
             <h5 class="body__header--subtitle">Calcule e controle seus gastos de forma fácil e prática!</h5>
         </header>
         <main class="main-content">
-            <!-- FirstSection -->
+
                 <!--spentTableSection-->
                 <section class="main-content__table">
-                    <button type="button" class="main-content__tableSection--button" id="registerButton">Inserir Transação</button>
-                    <button type="button" class="main-content__tableSection--button" id="detailButton">Detalhar Transações</button>
+                    <button type="button" class="button main-content__table--button" id="registerButton">Inserir Transação</button>
+                    
                     <!--spentTable-->
-                    <table class="main-content__tableContent">
+                    <table class="main-content__table--content">
 
-                            <tr class="main-content__tableContent--thead">
+                            <tr class="main-content__table--content--thead">
                                 <th>Nome</th>
                                 <th>Valor</th>
                                 <th>Data</th>
                                 <th>Ação</th>
                             </tr>
 
-                            <tr class="main-content__tableContent--tbody">
+                            <tr class="main-content__table--content--tbody">
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>
-                                    <button type="button" class="main-content__tableContent--tbody--button" id="editButton">Editar</button>
-                                    <button type="button" class="main-content__tableContent--tbody--button" id="deletButton">Excluir</button>
+                                    <button type="button" class="button main-content__table--content--tbody--button" id="editButton">Editar</button>
+                                    <button type="button" class="button main-content__table--content--tbody--button" id="deletButton">Excluir</button>
                                 </td>
                             </tr>
                     </table>
                 </section>
                 
 
-            <!--SecondSection-->
                 <!--NewTransactionSection-->
-                <section class="main-content__windowSection" id="windowSection">
-                    <header class="main-content__windowSection--header">
-                        <h1 class="main-content__windowSection--header--title">Nova Transação</h1>
-                        <span class="main-content__windowSection--header--subtitle" id="closeWindow">&#10006;</span>
-                    </header>
+                <section class="main-content__modalSection" id="modalSection">
+                    <section class="main-content__modalSection--content">
+                        <header class="main-content__modalSection--content--header">
+                            <span class="main-content__modalSection--content--header--icon" id="closeModal"> &#10006; </span>
+                            <h1 class="main-content__modalSection--content--header--title">Nova Transação</h1>
+                        </header>
 
-                    <form class="main-content__windowSection--form" id="newTransaction">
-                        <label name="inputName">Nome:</label>
-                        <input type="text" class="main-content__windowSection--form--fillField" id="inputName" placeholder="Nome">
-                        <label name="inputPrice">Valor:</label>
-                        <input type="number" class="main-content__windowSection--form--fillField" id="inputPrice" placeholder="R$ 25,00">
-                        <label name="inputDate">Data:</label>
-                        <input type="date" class="main-content__windowSection--form--fillField" id="inputDate" placeholder="05/02/2022">
-                    </form>
+                        <form class="main-content__modalSection--content--form" id="newTransaction">
+                            <label name="inputName">Nome:</label>
+                            <input type="text" class="main-content__modalSection--content--form--fillField" id="inputName" placeholder="Nome">
+                            <label name="inputPrice">Valor:</label>
+                            <input type="number" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00">
+                            <label name="inputDate">Data:</label>
+                            <input type="date" class="main-content__modalSection--content--form--fillField" id="inputDate" placeholder="05/02/2022">
+                        </form>
 
-                    <footer class="main-content__windowSection--footer--bottomButton">
-                        <button type="button" class="main-content__windowSection--footer--bottomButton" id="saveButton">Salvar</button>
-                        <button type="button" class="main-content__windowSection--footer--bottomButton" id="exitButton">Sair</button>
-                    </footer>
+                        <footer class="main-content__modalSection--footer">
+                            <button type="button" class="button main-content__modalSection--content--footer--bottomButton" id="saveButton">Salvar</button>
+                            <button type="button" class="button main-content__modalSection--content--footer--bottomButton" id="exitButton">Sair</button>
+                        </footer>
+                    </section>
                 </section>
         </main>
 
