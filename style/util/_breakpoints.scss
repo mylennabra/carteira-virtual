@@ -2,83 +2,15 @@
 @use '../variables/index.scss' as a;
 
 @include tablet{
-//     body{
-//         border: 10px;
-//         display: flex;
-//         flex-direction: column;
-//     }
 
-    .firstPage{
-        margin-top: -30%;
-        min-height: 50px;
-        max-height: fit-content;
-        width: 70%;
-        padding: 5%;
-    }
-
-//     .button{
-//         margin: 10px;
-//         min-width: 90px;
-//     }
-    
 }
 
 @include mobile{
-
-    .mainHeader{
-        flex-wrap: nowrap;
-        width: 100%;
-    }
-
-    .titleMainHeader{
-        &:nth-child(1){
-            font-size: a.$font-size*3;
-        }
-        &:nth-child(2){
-            font-size: a.$font-size*2;
-
-        }
-    }
-
-    .firstPage{
-        margin-top: -35%;
-        flex-wrap: nowrap;
-        height: fit-content;
-        max-width: 70%;
-    }
-
-    .topButton{
-        width: fit-content;
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        flex-basis: 0;
-        margin: 5px;
-        justify-content: space-between;
-    }
-
-    .table{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1px;
-    }
-    
-    .button{
-        font-size: a.$font-size*2;
-        min-width: 90px;
-    }
 
     
 }
 
 @include computer{
 
-    .firstPage{
-        margin-top: 10%;
-    //     flex-wrap: wrap;
-    //     min-height: 50px;
-    //     max-height: 60%;
-    //     max-width: 200px;
-    //     margin: 10px;
-    }
+
 }
