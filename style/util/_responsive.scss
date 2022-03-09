@@ -1,24 +1,21 @@
 @use 'breakpoints.scss' as *;
 @use '../variables/index.scss' as a;
 
-// @mixin mobile {
-//     @media screen and (max-width: 480px) {
-//         @content;
-//     }
-// }
+@include for-size(phone-only){
 
-// @mixin tablet {
-//     @media screen and (min-width: 481px) {
-//         @content;
-//     }
-// }
+}
 
-// @mixin computer {
-//     @media screen and (min-width: 960px) {
-//         @content;
-//     }
-// }
+@include for-size(tablet-portrait-up){
 
+}
+
+@include for-size(tablet-landscape-up){
+
+}
+
+@include for-size(desktop-up){
+
+}
 
 
 %align-center {
