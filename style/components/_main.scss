@@ -17,7 +17,7 @@ body{
 
 .button{
     background-color: a.$bg-color;
-    border: solid 2px black;
+    border: solid 1px lighten(black,10%);
     border-radius: 5px;
     color: black;
     font-size: 1rem;
@@ -29,6 +29,7 @@ body{
 
     &:hover{
         background-color: lighten(a.$bg-color, 10%);
+        cursor: pointer;
     }
 }
 
@@ -49,18 +50,18 @@ tbody{
     /*Main table section*/
     &__table{
         position: absolute;
-        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        border: 2px solid black;
-        border-radius: 5px;
+        transform: translate(-50%, 0);
+        border-radius: 10px;
+        border: solid 2px darken(a.$bg-color3, 15%);
+        box-shadow: 2px 2px 5px darken(a.$bg-color3, 30%);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 20px;
         width: 60%;
-        background-color: lighten(a.$bg-color, 30%);
+        background-color: lighten(a.$bg-color3, 30%);
 
         &--header{
             display: flex;
@@ -95,6 +96,8 @@ tbody{
             .thead--cell{
                 background-color: unset;
                 padding: 8px;
+                border: solid 1px lighten(black,40%);
+                border-radius: 5px;
 
                 &:nth-child(1){
                     min-width: 100px;
@@ -119,6 +122,7 @@ tbody{
                     width: 100%;
                     margin: 2px;
                     padding: 8px;
+                    border-bottom: solid 1px lighten(black,15%);
                 }
 
                 /*table submission buttons*/
@@ -156,7 +160,7 @@ tbody{
         top: 0;
         background-color: rgba(0,0,0,.7);
         z-index: 2000;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
 
@@ -198,21 +202,11 @@ tbody{
             }
         }
     }
+
+
 }
 
-
-
-.main-content__modalSection:active{
+.main-content__modalSection.mostrar{
+    animation: modal 1s;
     display: flex;
-    @keyframes modal {
-        from{
-            opacity: 0;
-            transform: matrix3d(0, -20px, 0);
-        }
-        to{
-            opacity: 1;
-            transform: matrix3d(0, 0, 0);
-        }
-    }
 }
-
