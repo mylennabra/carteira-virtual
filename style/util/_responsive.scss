@@ -1,20 +1,25 @@
-@mixin mobile {
-    @media screen and (max-width: 480px) {
-        @content;
-    }
-}
+@use 'breakpoints.scss' as *;
+@use '../variables/index.scss' as a;
 
-@mixin tablet {
-    @media screen and (min-width: 481px) {
-        @content;
-    }
-}
+// @mixin mobile {
+//     @media screen and (max-width: 480px) {
+//         @content;
+//     }
+// }
 
-@mixin computer {
-    @media screen and (min-width: 960px) {
-        @content;
-    }
-}
+// @mixin tablet {
+//     @media screen and (min-width: 481px) {
+//         @content;
+//     }
+// }
+
+// @mixin computer {
+//     @media screen and (min-width: 960px) {
+//         @content;
+//     }
+// }
+
+
 
 %align-center {
     display: flex;
