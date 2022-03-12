@@ -1,12 +1,14 @@
+'use strict'
+
 function openModal(ID){
     const modal = document.querySelector("#modalSection");
     modal.classList.add('mostrar');
-};
+}
 
 function closeModal(ID){
     const modal = document.querySelector("#modalSection");
     modal.classList.remove('mostrar');
-};
+}
 
 document.getElementById('registerButton')
     .addEventListener('click', openModal)
@@ -24,8 +26,16 @@ const tempTransactions = {
     data: "02/03/2022"
 }
 
-// CRUD
+// CRUD - create
+
+
 
 const createTransaction = (transaction) => {
-    localStorage.setItem("db_transaction", JSON.stringify(transaction))
+    const db_transaction = getLocalStorage()
+    db_transaction.push (transaction)
+    setLocalStorage(db_transaction) 
 }
+
+const getLocalStorage = () => JSON.parse(localStorage.getItem('db_transaction')) ?? []
+
+const setLocalStorage = (db_transaction) => localStorage.setItem("db_transaction", JSON.stringify(db_transaction))
