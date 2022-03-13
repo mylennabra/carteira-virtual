@@ -26,7 +26,7 @@
                     </div>
 
                     <!--spentTable-->
-                    <table class="main-content__table--content">
+                    <table id="table" class="main-content__table--content">
                         <thead>
                             <tr class="main-content__table--content--thead">
                                 <th class="thead--cell">Nome</th>
@@ -35,16 +35,8 @@
                                 <th class="thead--cell">Ação</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr class="main-content__table--content--tbody">
-                                <td class="tbody--cell">Supermercado</td>
-                                <td class="tbody--cell">25,00</td>
-                                <td class="tbody--cell">02/03/2022</td>
-                                <td class="tbody--cell">
-                                    <button type="button" class="button main-content__table--content--tbody--button" id="editButton">Editar</button>
-                                    <button type="button" class="button main-content__table--content--tbody--button" id="deletButton">Excluir</button>
-                                </td>
-                            </tr>
+                        <tbody class="main-content__table--content--tbody">
+                           
                         </tbody>
                     </table>
                 </section>
@@ -61,15 +53,15 @@
                         <form class="main-content__modalSection--content--form" id="newTransaction">
                              
                                 <label name="inputName">Nome:</label>
-                                <input type="text" class="main-content__modalSection--content--form--fillField" id="inputName" placeholder="Nome">
+                                <input type="text" data-index="new" class="main-content__modalSection--content--form--fillField" id="inputName" placeholder="Nome" required>
                             
                                    
                                 <label name="inputPrice">Valor:</label>
-                                <input type="number" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00">
+                                <input type="number" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00" required>
                             
                              
                                 <label name="inputDate">Data:</label>
-                                <input type="date" class="main-content__modalSection--content--form--fillField" id="inputDate" placeholder="05/02/2022">
+                                <input type="date" class="main-content__modalSection--content--form--fillField" id="inputDate" placeholder="05/02/2022" required>
                             
                         </form>
 
