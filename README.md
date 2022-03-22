@@ -34,8 +34,11 @@
 
 <hr>
 
-## <img height="25px" src="https://cdn-icons-png.flaticon.com/512/214/214362.png"> Você pode conferir o site no link: <a href="https://mylennabra.github.io/carteira-virtual/">Carteira Virtual</a>
+### <img width="20px" src="https://user-images.githubusercontent.com/74362841/159389425-51135c2f-90d7-4e5a-a801-635a06f755bf.gif"> Obrigada pelo interesse :)
 
-<hr>
+### Contatos:
 
-[⬆ Voltar ao topo](carteira-virtual)
+<a href="https://www.linkedin.com/in/mylenna-rodrigues-794553210" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+<a href = "mailto:mylennabra@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23527f?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://discord.gg/lolarilarilo#8906" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
+<a href="https://instagram.com/mylennabra" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%2396346F?style=for-the-badge&logo=instagram&logoColor=white"  target="_blank"></a>
