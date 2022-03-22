@@ -22,9 +22,10 @@
 ### Objetivos Específicos
 #### A ideia é trazer conceitos e novas funcionalidades após cada conquista no projeto, como:
 - [x] Página HTML e tabela manipulável
+- [x] Criação de modal
 - [x] Estilização com Sass
 - [x] CRUD em Local Storage
-- [x] Criação de modal
+- [ ] Customizar campos do formulário e validação de dados
 - [ ] Tornar site responsivo com ferramentas atuais
 - [ ] Cálculo e apresentação de soma de trasações em gráficos
 - [ ] Botão que coloca o site em <i>dark mode</i> e vice versa
@@ -33,7 +34,7 @@
 
 <hr>
 
-## <img height="25px" src="https://cdn-icons-png.flaticon.com/512/214/214362.png"> Você pode conferir o site no link: <a href="">Carteira Virtual</a>
+## <img height="25px" src="https://cdn-icons-png.flaticon.com/512/214/214362.png"> Você pode conferir o site no link: <a href="https://mylennabra.github.io/carteira-virtual/">Carteira Virtual</a>
 
 <hr>
 
