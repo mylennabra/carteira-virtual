@@ -2,10 +2,50 @@
 @use '../variables/index.scss' as a;
 
 @include for-size(phone-only){
+    // .body__header {
+    //     &--title{
+    //         font-size: 2rem;
+    //     }
+    //     &--subtitle{
+    //         font-size: 0.8rem;
+    //     }
+    // }
 
 }
 
 @include for-size(tablet-portrait-up){
+    .body__header {
+        &--title{
+            font-size: 2rem;
+        }
+        &--subtitle{
+            font-size: 0.8rem;
+        }
+    }
+
+
+    .main-content{
+        
+        &__table{
+            width: 80%;
+        }
+
+        .thead--cell{
+
+            &:nth-child(1){
+                min-width: 90px;
+            }
+            
+            &:nth-child(2){
+                min-width: 80px;
+            }
+
+            &:nth-child(3){
+                min-width: 80px;
+            }
+        }
+    }
+
 
 }
 

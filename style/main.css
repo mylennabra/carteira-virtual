@@ -8,6 +8,27 @@
     opacity: 1;
   }
 }
+@media (min-width: 500px) {
+  .body__header--title {
+    font-size: 2rem;
+  }
+  .body__header--subtitle {
+    font-size: 0.8rem;
+  }
+
+  .main-content__table {
+    width: 80%;
+  }
+  .main-content .thead--cell:nth-child(1) {
+    min-width: 90px;
+  }
+  .main-content .thead--cell:nth-child(2) {
+    min-width: 80px;
+  }
+  .main-content .thead--cell:nth-child(3) {
+    min-width: 80px;
+  }
+}
 .body__header {
   background-color: #f9f9f9;
   min-height: 20%;
