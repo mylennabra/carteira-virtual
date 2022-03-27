@@ -5,7 +5,7 @@
 ![](https://img.shields.io/github/languages/top/mylennabra/carteira-virtual?color=%23ffc52c&style=flat-square)
 ![](https://img.shields.io/github/last-commit/mylennabra/carteira-virtual?color=%23ffc52c&style=flat-square)
 
-<img width="70%" src="https://user-images.githubusercontent.com/74362841/159385513-2ffa5487-7ba2-4560-9b1f-f89733670912.png" alt="pagina inicial">
+<img width="70%" src="https://user-images.githubusercontent.com/74362841/159394035-5780e063-ac34-4703-abb7-62f1eb24945c.png" alt="pagina inicial">
 
 > A basic page where you can put your spending and track where your money is going.
 
