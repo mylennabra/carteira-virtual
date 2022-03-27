@@ -9,6 +9,9 @@
   }
 }
 @media (min-width: 500px) {
+  .body__header {
+    max-height: 20%;
+  }
   .body__header--title {
     font-size: 2rem;
   }
@@ -21,12 +24,13 @@
   }
   .main-content .thead--cell:nth-child(1) {
     min-width: 90px;
+    max-width: 120px;
   }
   .main-content .thead--cell:nth-child(2) {
     min-width: 80px;
   }
   .main-content .thead--cell:nth-child(3) {
-    min-width: 80px;
+    min-width: 90px;
   }
 }
 .body__header {
