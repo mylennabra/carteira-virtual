@@ -48,6 +48,7 @@ tbody{
     /*Main table section*/
     &__table{
         position: absolute;
+        z-index: 5;
         left: 50%;
         transform: translate(-50%, 0);
         border-radius: 10px;
