@@ -2,14 +2,53 @@
 @use '../variables/index.scss' as a;
 
 @include for-size(phone-only){
-    // .body__header {
-    //     &--title{
-    //         font-size: 2rem;
-    //     }
-    //     &--subtitle{
-    //         font-size: 0.8rem;
-    //     }
-    // }
+    .body__header {
+        max-height: 10%;
+        &--title{
+            font-size: 1.5rem;
+        }
+        &--subtitle{
+            font-size: 0.7rem;
+        }
+    }
+
+    .main-content{
+        
+        &__table{
+            width: 80%;
+            font-size: 0.7rem;
+
+            &--header{
+                &--title{
+                    font-size: 1.5rem;
+                }
+                &--button{
+                font-size: 0.7rem;
+                }
+            }
+            &--content{
+                &--thead{
+                    max-height: 10px;
+                }
+
+                .thead--cell{
+                    padding: 5px;
+                    &:nth-child(1){
+                        min-width: 60px;
+                    }
+                    
+                    &:nth-child(2){
+                        min-width: 40px;
+                    }
+        
+                    &:nth-child(3){
+                        min-width: 70px;
+                    }
+                }
+            }
+        }
+
+    }
 
 }
 
@@ -61,7 +100,6 @@
             font-size: 1.2rem;
         }
     }
-
 
     .main-content{
         
