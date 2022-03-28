@@ -26,7 +26,7 @@
 - [x] Estilização com Sass
 - [x] CRUD em Local Storage
 - [ ] Customizar campos do formulário e validação de dados
-- [ ] Tornar site responsivo com ferramentas atuais
+- [x] Tornar site responsivo com ferramentas atuais
 - [ ] Cálculo e apresentação de soma de trasações em gráficos
 - [ ] Botão que coloca o site em <i>dark mode</i> e vice versa
 - [ ] Criar sistema de login
