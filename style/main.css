@@ -150,7 +150,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-body {
+.body {
   background-color: #f9f9f9;
   width: 100vw !important;
   height: 100vh !important;
@@ -203,6 +203,9 @@ tbody {
   width: 60%;
   background-color: white;
   /*spentTable*/
+}
+.main-content__table tbody tr:hover {
+  background-color: white;
 }
 .main-content__table--header {
   display: flex;
@@ -301,7 +304,6 @@ tbody {
   justify-content: center;
   position: relative;
   /* Form section */
-  /* Form footer */
 }
 .main-content__modalSection--content--form {
   display: grid;
@@ -317,8 +319,58 @@ tbody {
   font-size: 1rem;
   padding: 5px;
 }
-.main-content__modalSection--content--footer--bottomButton {
-  background-color: #ffc52c;
+
+.changeThemeMixin {
+  background-color: #141414 !important;
+}
+.changeThemeMixin .body__header {
+  background-color: #141414;
+}
+.changeThemeMixin .body__header--title {
+  color: #e6e6e6;
+}
+.changeThemeMixin .main-content__modalSection--content {
+  background-color: #606060;
+  border: solid 3px #3a3a3a;
+}
+.changeThemeMixin .main-content__modalSection--content--header {
+  background-color: #606060;
+}
+.changeThemeMixin .main-content__modalSection--content--header--title {
+  color: #f9f9f9;
+}
+.changeThemeMixin .main-content__modalSection--content--header--icon {
+  color: #f9f9f9;
+}
+.changeThemeMixin .main-content__modalSection--content--header--icon:hover {
+  color: #bfbfbf;
+}
+.changeThemeMixin .main-content__modalSection--content--form {
+  color: #f9f9f9;
+}
+.changeThemeMixin .main-content__modalSection--content--form--fillField {
+  background-color: #adadad;
+}
+.changeThemeMixin .main-content__table {
+  border: solid 3px #3a3a3a;
+  box-shadow: 2px 2px 5px black;
+  background-color: #606060;
+}
+.changeThemeMixin .main-content__table--header--title {
+  color: #f9f9f9;
+}
+.changeThemeMixin .main-content__table tbody tr:hover {
+  background-color: #686868;
+}
+.changeThemeMixin .main-content .thead--cell {
+  border: solid 1px black;
+}
+.changeThemeMixin .main-content .tbody--cell {
+  color: #f9f9f9;
+  border-bottom: solid 1px #f9f9f9;
+}
+.changeThemeMixin .footer {
+  color: #f9f9f9;
 }
 
 .main-content__modalSection.mostrar {
