@@ -1,0 +1,69 @@
+@use "../variables/index.scss" as a;
+@use '../util/index.scss' as *;
+
+
+    .body{
+        &.darkTheme{
+            background-color: darken(a.$bg-color3,90%);
+        }
+
+        &__header{
+            background-color: darken(a.$bg-color3,90%);
+            &--title{
+                color: lighten(a.$text-color,90%);
+            }
+        }
+    }
+
+
+    .main-content{
+        &__modalSection--content{
+            background-color: darken(a.$bg-color3,60%);
+            border: solid 3px darken(a.$bg-color3, 75%);
+            &--header{
+                background-color: darken(a.$bg-color3,60%);
+                &--title{
+                    color: a.$bg-color3;
+                }
+                &--icon{
+                    color: a.$bg-color3;
+                    &:hover{
+                        color: lighten(black, 75%);
+                    }
+                }
+            }
+            &--form{
+                color: a.$bg-color3;
+                &--fillField{
+                    background-color: darken(a.$bg-color3, 30%);
+                }
+            }
+        }
+
+        &__table{
+            border: solid 3px darken(a.$bg-color3, 75%);
+            box-shadow: 2px 2px 5px darken(a.$bg-color3, 100%);
+            background-color: darken(a.$bg-color3,60%);
+            &--header--title{
+                color: a.$bg-color3;
+            }
+            tbody tr{
+                &:hover{
+                    background-color: darken(a.$bg-color3, 57%);
+                }
+            }
+        }
+
+        .thead--cell{
+            border: solid 1px darken(black,40%);
+
+        }
+        .tbody--cell{
+            color: a.$bg-color3;
+            border-bottom: solid 1px a.$bg-color3;
+        }
+    }
+
+    .footer{
+        color: a.$bg-color3;
+    }
