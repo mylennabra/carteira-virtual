@@ -2,7 +2,9 @@
     color: rgb(73, 73, 73);
     font-size: 12px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: fixed;
 	bottom: 10px;
 	width: 100%;
