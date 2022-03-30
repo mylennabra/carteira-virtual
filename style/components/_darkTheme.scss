@@ -1,11 +1,9 @@
 @use "../variables/index.scss" as a;
 @use '../util/index.scss' as *;
 
-
+@mixin darkTheme{
+    background-color: darken(a.$bg-color3,90%)!important;
     .body{
-        &.darkTheme{
-            background-color: darken(a.$bg-color3,90%);
-        }
 
         &__header{
             background-color: darken(a.$bg-color3,90%);
@@ -67,3 +65,4 @@
     .footer{
         color: a.$bg-color3;
     }
+}
