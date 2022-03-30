@@ -1,5 +1,6 @@
 @use "../variables/index.scss" as a;
 @use '../util/index.scss' as *;
+@use '../components/darkTheme' as *;
 
 *{
     margin: 0;
@@ -199,6 +200,10 @@ tbody{
     }
 
 
+}
+
+.changeThemeMixin{
+    @include darkTheme();
 }
 
 .main-content__modalSection.mostrar{
