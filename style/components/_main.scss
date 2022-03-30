@@ -7,7 +7,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body{
+.body{
     background-color: a.$bg-color3;
     width: 100vw !important;
     height: 100vh !important;
@@ -47,6 +47,11 @@ tbody{
 
     /*Main table section*/
     &__table{
+        tbody tr{
+            &:hover{
+                background-color: lighten(a.$bg-color3, 40%);
+            }
+        }
         position: absolute;
         z-index: 5;
         left: 50%;
@@ -188,14 +193,6 @@ tbody{
                     margin: 10px;
                     font-size: 1rem;
                     padding: 5px;
-                }
-            }
-
-            /* Form footer */
-            &--footer{
-
-                &--bottomButton{
-                    background-color: a.$bg-color;
                 }
             }
         }
