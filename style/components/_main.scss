@@ -50,7 +50,7 @@ tbody{
     &__table{
         tbody tr{
             &:hover{
-                background-color: lighten(a.$bg-color3, 40%);
+                background-color: darken(a.$bg-color3, 1%);
             }
         }
         position: absolute;

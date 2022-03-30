@@ -205,7 +205,7 @@ tbody {
   /*spentTable*/
 }
 .main-content__table tbody tr:hover {
-  background-color: white;
+  background-color: #f6f6f6;
 }
 .main-content__table--header {
   display: flex;
