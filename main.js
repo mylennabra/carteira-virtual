@@ -133,6 +133,11 @@ const fillFields = (transaction) => {
 
 updateTable()
 
+function changeTheme(){
+    const doc = document.getElementById("body");
+    doc.classList.add('changeThemeMixin');
+}
+
 // Events
 document.getElementById('registerButton')
     .addEventListener('click', openModal)
@@ -149,3 +154,5 @@ document.getElementById('saveButton')
 document.querySelector('#table>tbody')
     .addEventListener('click', editDelete)
 
+document.getElementById('themeButton')
+    .addEventListener('click', changeTheme)
