@@ -133,9 +133,14 @@ const fillFields = (transaction) => {
 
 updateTable()
 
-function changeTheme(){
+function changeThemeDark(){
     const doc = document.getElementById("body");
     doc.classList.add('changeThemeMixin');
+}
+
+function changeThemeLight(){
+    const doc = document.getElementById("body");
+    doc.classList.remove('changeThemeMixin');
 }
 
 // Events
@@ -154,5 +159,8 @@ document.getElementById('saveButton')
 document.querySelector('#table>tbody')
     .addEventListener('click', editDelete)
 
-document.getElementById('themeButton')
-    .addEventListener('click', changeTheme)
+document.getElementById('themeButtonDark')
+    .addEventListener('click', changeThemeDark)
+
+document.getElementById('themeButtonLight')
+    .addEventListener('click', changeThemeLight)
