@@ -380,7 +380,6 @@ tbody {
 
 .footer {
   color: #494949;
-  user-select: none;
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -390,6 +389,35 @@ tbody {
   bottom: 10px;
   width: 100%;
   z-index: 1;
+}
+.footer .themeButtons {
+  background-color: #ffc52c;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 3.6rem;
+  height: 1.8rem;
+  padding: 1px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  box-shadow: 1px 1px 2px #c6c6c6;
+}
+.footer .themeButtons #themeButtonDark {
+  display: none;
+}
+.footer .themeButtons #toggle {
+  background-color: #f9f9f9;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.footer .themeButtons #themeButtonDark:checked + #toggle {
+  margin-left: 20px;
+  background-color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
