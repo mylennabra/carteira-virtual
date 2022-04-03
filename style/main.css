@@ -380,6 +380,7 @@ tbody {
 
 .footer {
   color: #494949;
+  user-select: none;
   font-size: 12px;
   display: flex;
   flex-direction: column;

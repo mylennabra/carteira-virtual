@@ -135,12 +135,7 @@ updateTable()
 
 function changeThemeDark(){
     const doc = document.getElementById("body");
-    doc.classList.add('changeThemeMixin');
-}
-
-function changeThemeLight(){
-    const doc = document.getElementById("body");
-    doc.classList.remove('changeThemeMixin');
+    doc.classList.toggle('changeThemeMixin');
 }
 
 // Events
@@ -161,6 +156,3 @@ document.querySelector('#table>tbody')
 
 document.getElementById('themeButtonDark')
     .addEventListener('click', changeThemeDark)
-
-document.getElementById('themeButtonLight')
-    .addEventListener('click', changeThemeLight)
