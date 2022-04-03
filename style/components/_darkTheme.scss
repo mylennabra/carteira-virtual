@@ -1,10 +1,21 @@
 @use "../variables/index.scss" as a;
 @use '../util/index.scss' as *;
 
+@mixin transition{
+    transition-timing-function: ease;
+    transition-duration:1s;
+}
+
+*:not(tbody tr, .button){
+    transition-duration:1.5s;
+    transition-timing-function: ease;
+}
+
+
 @mixin darkTheme{
     background-color: darken(a.$bg-color3,90%)!important;
     .body{
-
+        
         &__header{
             background-color: darken(a.$bg-color3,90%);
             &--title{
