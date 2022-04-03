@@ -154,5 +154,5 @@ document.getElementById('saveButton')
 document.querySelector('#table>tbody')
     .addEventListener('click', editDelete)
 
-document.getElementById('themeButtonDark')
+document.getElementById('toggle')
     .addEventListener('click', changeThemeDark)
