@@ -6,7 +6,7 @@
     transition-duration:1s;
 }
 
-*:not(tbody tr, .button){
+*:not(tbody tr, .button, .footer, #toggle){
     transition-duration:1.5s;
     transition-timing-function: ease;
 }
@@ -15,7 +15,7 @@
 @mixin darkTheme{
     background-color: darken(a.$bg-color3,90%)!important;
     .body{
-        
+
         &__header{
             background-color: darken(a.$bg-color3,90%);
             &--title{
