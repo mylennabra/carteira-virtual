@@ -46,7 +46,7 @@ const saveTransactions = () => {
         const transaction = {
             name: document.getElementById('inputName').value,
             price: document.getElementById('inputPrice').value,
-            date: document.getElementById('inputDate').value
+            date: moment(JSON.stringify(document.getElementById('inputDate').value)).format("DD/MM/yyyy") // Json, getElement, format
         }
         const index = document.getElementById('inputName').dataset.index // Pulling the data-index from the HTML
         if (index == "new"){
@@ -74,7 +74,7 @@ const clearFields = () => {
 }
 
 // Insert content on table
-const updateTable = (transaction) => {
+const updateTable = () => {
     const db_transaction = readTransaction()
     clearTable()
     db_transaction.forEach(createRow)
