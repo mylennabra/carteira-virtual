@@ -1,3 +1,5 @@
+@use "../variables/index.scss" as a;
+
 @keyframes modal {
     from{
         transform: translate3d(0,-20px,0);
@@ -7,4 +9,13 @@
         transform: translate3d(0, 0, 0);
         opacity: 1;
     }
+}
+
+@mixin frame(){
+    margin: auto;
+    margin-top:0;
+    border-radius: 10px;
+    border: solid 2px darken(a.$bg-color3, 15%);
+    padding: 20px;
+    background-color: lighten(a.$bg-color3, 30%);
 }
