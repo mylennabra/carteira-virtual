@@ -70,12 +70,12 @@
 
     .footer{
         color: a.$bg-color3;
+    }
 
-        #toggle{
-            transition-timing-function:ease-in;
-            transform: translateX(30px);
-            transition-duration: 0.5s;
-            background-color: black;
-        }
+    #toggle{
+        transition-timing-function:ease-in;
+        transform: translateX(30px);
+        transition-duration: 0.5s;
+        background-color: black;
     }
 }
