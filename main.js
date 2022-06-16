@@ -68,7 +68,7 @@ const isValidTransaction = () => {
 
 // Clearing the fields
 const clearFields = () => {
-    const fields = document.querySelectorAll('.main-content__modalSection--content--form--fillField')
+    const fields = document.querySelectorAll('.modalSection--content--form--fillField')
     fields.forEach(field => field.value = "")
     //document.getElementById('inputName').dataset.index = 'new'
 }
@@ -84,13 +84,20 @@ const updateTable = () => {
 const createRow = (transaction, index) => {
     const newRow = document.createElement('tr')
     newRow.innerHTML = `
-        <td class="tbody--cell">${transaction.name}</td>
-        <td class="tbody--cell">${transaction.price}</td>
-        <td class="tbody--cell">${transaction.date}</td>
-        <td>
-            <button type="button" class="button main-content__table--content--tbody--button" id="editButton-${index}">Editar</button>
-            <button type="button" class="button main-content__table--content--tbody--button" id="deletButton-${index}">Excluir</button>
-        </td>
+        <tr>
+            <td class="tbody--cell">${transaction.name}</td>
+            <td class="tbody--cell">${transaction.price}</td>
+            <td class="tbody--cell">${transaction.date}</td>
+            <td class="tbody--cell">
+                <div class="actbtn">
+                    <label class="labelc" for="editButton-${index}"><i class="fas fa-pen"></i></label>
+                    <button type="button" class="hidebtn" id="editButton-${index}">
+                    </button>
+                    <label class="labelc" for="deletButton-${index}"><i class="fas fa-trash"></i></label>
+                    <button type="button" class="hidebtn" id="deletButton-${index}"></button>
+                </div>
+            </td>
+        </tr>
     `
     document.querySelector('#table>tbody').appendChild(newRow) //newRow sends automatically two infos: element and index from array
 }
