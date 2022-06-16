@@ -236,6 +236,10 @@ tbody {
   font-size: 1rem;
   padding: 5px;
 }
+.main-content__modalSection .tip {
+  font-size: 0.8rem;
+  color: #ffc52c;
+}
 
 .changeThemeMixin {
   background-color: #141414 !important;
