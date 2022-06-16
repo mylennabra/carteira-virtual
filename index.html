@@ -10,6 +10,7 @@
         <link type="text/css" rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="shortcut icon" href="/style/icon.png" type="image/x-icon">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     </head>
 
@@ -73,74 +74,88 @@
                 </div>
               </div>
             </div>
-          </nav>
+        </nav>
 
-        <main class="main-content">
+        <main class="mainContent">
+ 
+            <section class="totalContainer">
+                <div class="main-content__table--header">
+                    <h1 class="main-content__table--header--title">Despesas Totais</h1>
+                </div>
+            </section>
+            <section class="graficoContainer">
+                <div class="main-content__table--header">
+                    <h1 class="main-content__table--header--title">Categorias</h1>
+                </div>
+            </section>
 
-                <!--spentTableSection-->
-                <section class="main-content__table">
-                    <div class="main-content__table--header">
-                        <button type="button" class="button main-content__table--header--button" id="registerButton">Inserir Transação</button>
-                        <h1 class="main-content__table--header--title">Transações</h1>
-                    </div>
 
-                    <!--spentTable-->
-                    <table id="table" class="main-content__table--content">
-                        <thead>
-                            <tr class="main-content__table--content--thead">
-                                <th class="thead--cell">Nome</th>
-                                <th class="thead--cell">Valor</th>
-                                <th class="thead--cell">Data</th>
-                                <th class="thead--cell">Ação</th>
-                            </tr>
-                        </thead>
-                        <tbody class="main-content__table--content--tbody">
-                           
-                        </tbody>
-                    </table>
-                </section>
-                
+            <section class="main-content">
 
-                <!--NewTransactionSection-->
-                <section class="main-content__modalSection" id="modalSection">
-                    <section class="main-content__modalSection--content">
-                        <header class="main-content__modalSection--content--header">
-                            <span class="main-content__modalSection--content--header--icon" id="closeModal" title="Sair"> &#10006; </span>
-                            <h1 class="main-content__modalSection--content--header--title">Nova Transação</h1>
-                        </header>
+                    <!--spentTableSection-->
+                    <section class="main-content__table">
+                        <div class="main-content__table--header">
+                            <h1 class="main-content__table--header--title">Transações</h1>
+                            <button type="button" class="button main-content__table--header--button" id="registerButton">Inserir Transação</button>
+                        </div>
 
-                        <form class="main-content__modalSection--content--form" id="newTransaction">
-                             
-                                <label name="inputName">Nome:</label>
-                                <input type="text" data-index="new" class="main-content__modalSection--content--form--fillField" id="inputName" placeholder="Nome" required>
-                            
-                                   
-                                <label name="inputPrice">Valor: <p class="tip">Use ponto (.) no lugar de vírgula (,)</p></label>
-                                <input type="text" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00" required>
-                            
-                             
-                                <label name="inputDate">Data:</label>
-                                <input type="date" class="main-content__modalSection--content--form--fillField" id="inputDate" placeholder="05/02/2022" required>
-                            
-                        </form>
-
-                        <footer class="main-content__modalSection--footer">
-                            <button type="button" class="button main-content__modalSection--content--footer--bottomButton" id="saveButton">Salvar</button>
-                            <button type="button" class="button main-content__modalSection--content--footer--bottomButton" id="exitButton">Sair</button>
-                        </footer>
+                        <!--spentTable-->
+                        <div id="scrollTable">
+                        <table id="table" class="main-content__table--content">
+                            <thead>
+                                <tr class="main-content__table--content--thead">
+                                    <th class="thead--cell">Nome</th>
+                                    <th class="thead--cell">Valor</th>
+                                    <th class="thead--cell">Data</th>
+                                    <th class="thead--cell">Ação</th>
+                                </tr>
+                            </thead>
+                                <tbody class="main-content__table--content--tbody">
+                                
+                                </tbody>  
+                            </table>
+                        </div>
                     </section>
-                </section>
+                    
+
+                    <!--NewTransactionSection-->
+                    <section class="modalSection" id="modalSection">
+                        <section class="modalSection--content">
+                            <header class="modalSection--content--header">
+                                <span class="modalSection--content--header--icon" id="closeModal" title="Sair"> &#10006; </span>
+                                <h1 class="modalSection--content--header--title">Nova Transação</h1>
+                            </header>
+
+                            <form class="modalSection--content--form" id="newTransaction">
+                                
+                                    <label name="inputName">Nome:</label>
+                                    <input type="text" data-index="new" class="modalSection--content--form--fillField" id="inputName" placeholder="Nome" required>
+                                
+                                    
+                                    <label name="inputPrice">Valor: <p class="tip">Use ponto (.) no lugar de vírgula (,)</p></label>
+                                    <input type="text" class="modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00" required>
+                                
+                                
+                                    <label name="inputDate">Data:</label>
+                                    <input type="date" class="modalSection--content--form--fillField" id="inputDate" placeholder="05/02/2022" required>
+                                
+                            </form>
+
+                            <footer class="main-content__modalSection--footer">  
+                                <button type="button" class="btnn main-content__modalSection--content--footer--bottomButton" id="exitButton">Sair</button>
+                                <button type="button" id="saveButton" class="btnn main-content__modalSection--content--footer--bottomButton" ><i class="fas fa-check"></i> Salvar</button>
+                            </footer>
+                        </section>
+                    </section>
+                </section>                            
         </main>
 
         <footer class="footer">
-            <div class="themeButtons">
-                <label for="themeButtonDark" id="toggle"></label>
-                <input type="checkbox" id="themeButtonDark"></button>
-            </div>
             <h5>Criado por Mylenna Rodrigues &copy; | mylenna.bra@gmail.com</h5>
         </footer>
         <script type="text/javascript" src="/main.js"></script>
         <script type="text/javascript" src="/moment.min.js"></script>
         <script type="text/javascript" src="/currency.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </body>
 </html>
