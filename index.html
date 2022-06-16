@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
     <head>
         <meta charset="UTF-8">
@@ -57,8 +57,8 @@
                                 <input type="text" data-index="new" class="main-content__modalSection--content--form--fillField" id="inputName" placeholder="Nome" required>
                             
                                    
-                                <label name="inputPrice">Valor:</label>
-                                <input type="number" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00" required>
+                                <label name="inputPrice">Valor: <p class="tip">Use ponto (.) no lugar de vírgula (,)</p></label>
+                                <input type="text" class="main-content__modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00" required>
                             
                              
                                 <label name="inputDate">Data:</label>
@@ -83,5 +83,6 @@
         </footer>
         <script type="text/javascript" src="/main.js"></script>
         <script type="text/javascript" src="/moment.min.js"></script>
+        <script type="text/javascript" src="/currency.min.js"></script>
     </body>
 </html>
