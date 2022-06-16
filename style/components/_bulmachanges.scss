@@ -28,3 +28,9 @@ table{
   color: a.$bg-color !important;
   border-color: a.$bg-color !important;
 }
+
+.button.is-ghost{
+  color: a.$bg-color !important;
+  box-shadow: none !important;
+  font-size: 1.2rem !important;
+}
