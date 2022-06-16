@@ -28,13 +28,13 @@
 - [ ] Customizar campos do formulário e validação de dados
 - [x] Tornar site responsivo com ferramentas atuais
 - [ ] Cálculo e apresentação de soma de trasações em gráficos
-- [ ] Botão que coloca o site em <i>dark mode</i> e vice versa
+- [x] Botão que coloca o site em <i>dark mode</i> e vice versa
 - [ ] Criar sistema de login
 - [ ] ...
 
 <hr>
 
-### <img width="20px" src="https://user-images.githubusercontent.com/74362841/159389425-51135c2f-90d7-4e5a-a801-635a06f755bf.gif"> Obrigada pelo interesse :)
+### <img height="20px" src="https://user-images.githubusercontent.com/74362841/159389425-51135c2f-90d7-4e5a-a801-635a06f755bf.gif"> Obrigada pelo interesse :)
 
 ### Contatos:
 
