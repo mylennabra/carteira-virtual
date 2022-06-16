@@ -66,6 +66,7 @@
   margin: 0;
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 .body {
@@ -87,7 +88,6 @@
   padding: 5px;
 }
 .button:hover {
-  background-color: #ffd35f;
   cursor: pointer;
 }
 
@@ -290,7 +290,7 @@ tbody {
 .changeThemeMixin .footer {
   color: #f9f9f9;
 }
-.changeThemeMixin .footer #toggle {
+.changeThemeMixin #toggle {
   transition-timing-function: ease-in;
   transform: translateX(30px);
   transition-duration: 0.5s;
@@ -405,7 +405,8 @@ tbody {
   width: 100%;
   z-index: 1;
 }
-.footer .themeButtons {
+
+.themeButtons {
   background-color: #ffc52c;
   display: flex;
   align-items: center;
@@ -413,14 +414,13 @@ tbody {
   width: 3.6rem;
   height: 1.8rem;
   padding: 1px;
-  margin-bottom: 10px;
   border-radius: 100px;
   box-shadow: 1px 1px 2px #c6c6c6;
 }
-.footer .themeButtons #themeButtonDark {
+.themeButtons #themeButtonDark {
   display: none;
 }
-.footer .themeButtons #toggle {
+.themeButtons #toggle {
   background-color: #f9f9f9;
   width: 1.4rem;
   height: 1.4rem;
@@ -431,19 +431,46 @@ tbody {
   transition-timing-function: ease-in;
   transition-duration: 0.5s;
 }
-.footer .themeButtons::before {
+.themeButtons::before {
   position: absolute;
   content: "OFF";
   font-size: 0.6rem;
   top: 10px;
   left: 46.5%;
 }
-.footer .themeButtons::after {
+.themeButtons::after {
   position: absolute;
   content: "ON";
   font-size: 0.6rem;
   top: 10px;
   left: 52.3%;
+}
+
+table {
+  border-collapse: unset !important;
+  border-spacing: 0.2rem !important;
+}
+
+.navbar {
+  min-height: 100px !important;
+}
+
+.buttons {
+  margin: auto !important;
+  border: none !important;
+}
+
+.buttons > .button {
+  border: none !important;
+}
+
+.navbar-item img {
+  max-height: 5rem !important;
+}
+
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, .navbar-link:not(.is-arrowless)::after {
+  color: #ffc52c !important;
+  border-color: #ffc52c !important;
 }
 
 /*# sourceMappingURL=main.css.map */

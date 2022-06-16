@@ -1,0 +1,29 @@
+@use "../variables/index.scss" as a;
+//@use "../components/index.scss" as *;
+
+table{
+  border-collapse: unset !important;
+  border-spacing: .2rem !important;
+}
+
+.navbar{
+  min-height: 100px !important;
+}
+
+.buttons{
+  margin: auto !important;
+  border: none !important;
+}
+
+.buttons>.button{
+  border: none !important;
+}
+
+.navbar-item img{
+  max-height: 5rem !important;
+}
+
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, .navbar-link:not(.is-arrowless)::after{
+  color: a.$bg-color !important;
+  border-color: a.$bg-color !important;
+}

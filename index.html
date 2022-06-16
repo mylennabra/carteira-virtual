@@ -8,15 +8,73 @@
         <title>Carteira Virtual</title>
         <base href="/style/main.css">
         <link type="text/css" rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="shortcut icon" href="/style/icon.png" type="image/x-icon">
 
     </head>
 
     <body id="body" class="body">
-        <header class="body__header">
-            <h1 class="body__header--title">Carteira Virtual</h1>
-            <h5 class="body__header--subtitle">Calcule e controle seus gastos de forma prática!</h5>
-        </header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="/style/icontipo.png" height="100">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Início
+                </a>
+          
+                <a class="navbar-item">
+                  Gastos
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Ações
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Adicionar gasto
+                    </a>
+                    <a class="navbar-item">
+                      Adicionar renda
+                    </a>
+                    <a class="navbar-item">
+                      Ver resumo
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Version 2.0 - 2022
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button">
+                        <div class="themeButtons">
+                            <label for="themeButtonDark" id="toggle"></label>
+                            <input type="checkbox" id="themeButtonDark"></button>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
         <main class="main-content">
 
                 <!--spentTableSection-->
