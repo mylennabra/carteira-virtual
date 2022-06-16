@@ -11,51 +11,37 @@
 	bottom: 10px;
 	width: 100%;
     z-index: 1;
+    height: 20px !important;
+    padding:0 !important;
 
-    .themeButtons{
-        background-color: a.$bg-color;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: 3.6rem;
-        height: 1.8rem;
-        padding: 1px;
-        margin-bottom: 10px;
+}
+.themeButtons{
+    background-color: a.$bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 3.6rem;
+    height: 1.8rem;
+    padding: 1px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 2px darken(a.$bg-color3, 20%);
+
+    #themeButtonDark{
+        display: none;
+        
+    }
+
+    #toggle{
+        background-color: a.$bg-color3;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-left: 2px;
+        margin-right: 2px;
         border-radius: 100px;
-        box-shadow: 1px 1px 2px darken(a.$bg-color3, 20%);
-
-        #themeButtonDark{
-            display: none;
-  
-        }
-
-        #toggle{
-            background-color: a.$bg-color3;
-            width: 1.4rem;
-            height: 1.4rem;
-            margin-left: 2px;
-            margin-right: 2px;
-            border-radius: 100px;
-            cursor: pointer;
-            transition-timing-function:ease-in;
-            transition-duration: 0.5s;
-        }
-
-        &::before{
-            position: absolute;
-            content: 'OFF';
-            font-size: 0.6rem;
-            top: 10px;
-            left: 46.5%;
-        }
-
-        &::after{
-            position: absolute;
-            content: 'ON';
-            font-size: 0.6rem;
-            top: 10px;
-            left: 52.3%;
-        }
+        cursor: pointer;
+        transition-timing-function:ease-in;
+        transition-duration: 0.5s;
     }
 }
+
 
