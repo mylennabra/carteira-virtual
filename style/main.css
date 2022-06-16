@@ -91,10 +91,6 @@
   cursor: pointer;
 }
 
-label {
-  user-select: none;
-}
-
 tbody {
   border: 2px solid black;
   border-radius: 5px;
@@ -165,6 +161,9 @@ tbody {
 }
 .main-content__table--content .thead--cell:nth-child(3) {
   min-width: 100px;
+}
+.main-content__table--content .thead--cell:nth-child(4) {
+  min-width: fit-content;
 }
 .main-content__table--content--tbody {
   /*table submission buttons cell*/
