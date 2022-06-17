@@ -163,3 +163,6 @@ document.querySelector('#table>tbody')
 
 document.getElementById('toggle')
     .addEventListener('click', changeThemeDark)
+
+document.getElementById('toggle2')
+    .addEventListener('click', changeThemeDark)
