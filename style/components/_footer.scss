@@ -15,33 +15,3 @@
     padding:0 !important;
 
 }
-.themeButtons{
-    background-color: a.$bg-color;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 3.6rem;
-    height: 1.8rem;
-    padding: 1px;
-    border-radius: 100px;
-    box-shadow: 1px 1px 2px darken(a.$bg-color3, 20%);
-
-    #themeButtonDark{
-        display: none;
-        
-    }
-
-    #toggle{
-        background-color: a.$bg-color3;
-        width: 1.4rem;
-        height: 1.4rem;
-        margin-left: 2px;
-        margin-right: 2px;
-        border-radius: 100px;
-        cursor: pointer;
-        transition-timing-function:ease-in;
-        transition-duration: 0.5s;
-    }
-}
-
-

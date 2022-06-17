@@ -8,7 +8,13 @@ table{
 
 .navbar{
   min-height: 100px !important;
-  box-shadow: 2px 2px 5px darken(a.$bg-color3, 30%);
+  box-shadow: 2px 2px 5px darken(a.$bg-color3, 10%);
+  padding-left: 20px;
+  padding-right: 20px;
+  //background-color: darken(a.$bg-color3, 60%) !important;
+  a{
+    color: black !important;
+  }
 }
 
 .buttons{
@@ -18,6 +24,7 @@ table{
 
 .buttons>.button{
   border: none !important;
+  margin-bottom: 0 !important;
 }
 
 .navbar-item img{

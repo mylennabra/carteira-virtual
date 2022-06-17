@@ -57,9 +57,47 @@
   color: #666666;
 }
 
-.body, .body__header--title, .main-content__table, .main-content__table--header--title {
+.body, .body__header--title, .main-content__table, .main-content__table--header--title, path {
   transition-timing-function: ease;
   transition-duration: 1s;
+}
+
+.svg-inline--fa:hover {
+  cursor: pointer;
+}
+
+.themeButtons {
+  display: flex;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 1px;
+  border-radius: 100px;
+  box-shadow: 1px 1px 2px #c6c6c6;
+}
+.themeButtons .transp-btn {
+  background-color: red !important;
+}
+.themeButtons #themeButtonDark {
+  display: none;
+}
+.themeButtons .fa-moon {
+  margin-left: -27px;
+}
+.themeButtons .fa-moon path {
+  color: transparent;
+}
+.themeButtons .fa-sun path {
+  color: #ffc52c;
+}
+.themeButtons #toggle {
+  background-color: white;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
 * {
@@ -363,11 +401,14 @@ tbody {
 .changeThemeMixin .footer {
   color: #f9f9f9;
 }
-.changeThemeMixin #toggle {
-  transition-timing-function: ease-in;
-  transform: translateX(30px);
-  transition-duration: 0.5s;
-  background-color: black;
+.changeThemeMixin .fa-moon {
+  margin-left: -27px;
+}
+.changeThemeMixin .fa-moon path {
+  color: #ffc52c;
+}
+.changeThemeMixin .fa-sun path {
+  color: transparent;
 }
 
 .modalSection.mostrar {
@@ -469,32 +510,6 @@ tbody {
   padding: 0 !important;
 }
 
-.themeButtons {
-  background-color: #ffc52c;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 3.6rem;
-  height: 1.8rem;
-  padding: 1px;
-  border-radius: 100px;
-  box-shadow: 1px 1px 2px #c6c6c6;
-}
-.themeButtons #themeButtonDark {
-  display: none;
-}
-.themeButtons #toggle {
-  background-color: #f9f9f9;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-left: 2px;
-  margin-right: 2px;
-  border-radius: 100px;
-  cursor: pointer;
-  transition-timing-function: ease-in;
-  transition-duration: 0.5s;
-}
-
 table {
   border-collapse: unset !important;
   border-spacing: 0.2rem !important;
@@ -502,7 +517,12 @@ table {
 
 .navbar {
   min-height: 100px !important;
-  box-shadow: 2px 2px 5px #adadad;
+  box-shadow: 2px 2px 5px #e0e0e0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar a {
+  color: black !important;
 }
 
 .buttons {
@@ -512,6 +532,7 @@ table {
 
 .buttons > .button {
   border: none !important;
+  margin-bottom: 0 !important;
 }
 
 .navbar-item img {
