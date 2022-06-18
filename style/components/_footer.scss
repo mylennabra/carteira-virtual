@@ -1,6 +1,7 @@
 @use "../variables/index.scss" as a;
 
 .footer{
+    background-color:transparent !important;
     color: rgb(73, 73, 73);
     font-size: 12px;
     display: flex;

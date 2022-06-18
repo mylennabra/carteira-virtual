@@ -67,6 +67,7 @@
 }
 
 .themeButtons {
+  background-color: #ffc52c;
   display: flex;
   align-items: center;
   width: 1.8rem;
@@ -74,9 +75,6 @@
   padding: 1px;
   border-radius: 100px;
   box-shadow: 1px 1px 2px #c6c6c6;
-}
-.themeButtons .transp-btn {
-  background-color: red !important;
 }
 .themeButtons #themeButtonDark {
   display: none;
@@ -91,7 +89,7 @@
   color: #ffc52c;
 }
 .themeButtons #toggle {
-  background-color: white;
+  background-color: #f9f9f9;
   width: 1.4rem;
   height: 1.4rem;
   margin-left: 2px;
@@ -104,6 +102,10 @@
   margin: 0;
   padding: 0;
   color: black;
+}
+
+html {
+  overflow-y: hidden !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -358,6 +360,15 @@ tbody {
 .changeThemeMixin .body__header--title {
   color: #e6e6e6;
 }
+.changeThemeMixin .totalContainer, .changeThemeMixin .graficoContainer, .changeThemeMixin .main-content {
+  border: solid 3px #3a3a3a;
+  box-shadow: 2px 2px 5px black;
+  background-color: #606060;
+}
+.changeThemeMixin .navbar {
+  background-color: #606060 !important;
+  box-shadow: 2px 2px 5px black;
+}
 .changeThemeMixin .main-content__modalSection--content {
   background-color: #606060;
   border: solid 3px #3a3a3a;
@@ -380,11 +391,6 @@ tbody {
 .changeThemeMixin .main-content__modalSection--content--form--fillField {
   background-color: #adadad;
 }
-.changeThemeMixin .main-content__table {
-  border: solid 3px #3a3a3a;
-  box-shadow: 2px 2px 5px black;
-  background-color: #606060;
-}
 .changeThemeMixin .main-content__table--header--title {
   color: #f9f9f9;
 }
@@ -399,7 +405,7 @@ tbody {
   border-bottom: solid 1px #f9f9f9;
 }
 .changeThemeMixin .footer {
-  color: #f9f9f9;
+  color: #f9f9f9 !important;
 }
 .changeThemeMixin .fa-moon {
   margin-left: -27px;
@@ -496,6 +502,7 @@ tbody {
   }
 }
 .footer {
+  background-color: transparent !important;
   color: #494949;
   font-size: 12px;
   display: flex;
