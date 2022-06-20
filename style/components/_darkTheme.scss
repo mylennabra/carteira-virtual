@@ -2,10 +2,10 @@
 @use '../util/index.scss' as *;
 
 @mixin transition{
-    transition: color 1000ms linear !important;
+    transition: background-color 500ms ease !important;
 }
 
-.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, .navbar, section{
+.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, section{
     @include transition();
 }
 
