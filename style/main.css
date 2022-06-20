@@ -57,9 +57,8 @@
   color: #666666;
 }
 
-.body, .body__header--title, .main-content__table, .main-content__table--header--title, path {
-  transition-timing-function: ease;
-  transition-duration: 1s;
+.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, .navbar, section {
+  transition: color 1000ms linear !important;
 }
 
 .svg-inline--fa:hover {
@@ -101,7 +100,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: black;
 }
 
 html {
@@ -369,6 +367,15 @@ tbody {
   background-color: #606060 !important;
   box-shadow: 2px 2px 5px black;
 }
+.changeThemeMixin .navbar-item, .changeThemeMixin .navbar-link, .changeThemeMixin .navbar-dropdown {
+  background-color: #606060 !important;
+}
+.changeThemeMixin .navbar-divider {
+  background-color: #535353 !important;
+}
+.changeThemeMixin .navbar a {
+  color: #f9f9f9 !important;
+}
 .changeThemeMixin .main-content__modalSection--content {
   background-color: #606060;
   border: solid 3px #3a3a3a;
@@ -415,6 +422,9 @@ tbody {
 }
 .changeThemeMixin .fa-sun path {
   color: transparent;
+}
+.changeThemeMixin .fa-trash path, .changeThemeMixin .fa-pen path {
+  color: #f9f9f9 !important;
 }
 
 .modalSection.mostrar {
@@ -528,6 +538,9 @@ table {
   padding-left: 20px;
   padding-right: 20px;
 }
+.navbar-dropdown {
+  border: none !important;
+}
 .navbar a {
   color: black !important;
 }
@@ -555,6 +568,10 @@ table {
   color: #ffc52c !important;
   box-shadow: none !important;
   font-size: 1.2rem !important;
+}
+
+.button {
+  background-color: transparent !important;
 }
 
 /*# sourceMappingURL=main.css.map */

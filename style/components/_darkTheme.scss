@@ -141,4 +141,10 @@
             color: transparent;
         }
     }
+    
+    .fa-trash, .fa-pen{
+        path{
+            color: a.$bg-color3 !important;
+        }
+    }
 }
