@@ -2,11 +2,10 @@
 @use '../util/index.scss' as *;
 
 @mixin transition{
-    transition-timing-function: ease;
-    transition-duration:1s;
+    transition: color 1000ms linear !important;
 }
 
-.body, .body__header--title, .main-content__table, .main-content__table--header--title, path{
+.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, .navbar, section{
     @include transition();
 }
 
@@ -70,6 +69,15 @@
     .navbar{
         background-color: darken(a.$bg-color3,60%) !important;
         box-shadow: 2px 2px 5px darken(a.$bg-color3, 100%);
+        &-item, &-link, &-dropdown{
+            background-color: darken(a.$bg-color3,60%) !important;
+        }
+        &-divider{
+            background-color: darken(a.$bg-color3,65%) !important;
+        }
+        & a{
+            color: a.$bg-color3 !important;
+        }
     }
 
     .main-content{

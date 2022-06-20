@@ -11,6 +11,9 @@ table{
   box-shadow: 2px 2px 5px darken(a.$bg-color3, 10%);
   padding-left: 20px;
   padding-right: 20px;
+  &-dropdown{
+    border: none !important;
+  }
   //background-color: darken(a.$bg-color3, 60%) !important;
   a{
     color: black !important;
