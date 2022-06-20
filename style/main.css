@@ -57,8 +57,8 @@
   color: #666666;
 }
 
-.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, .navbar, section {
-  transition: color 1000ms linear !important;
+.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, section {
+  transition: background-color 500ms ease !important;
 }
 
 .svg-inline--fa:hover {
@@ -559,7 +559,13 @@ table {
   max-height: 5rem !important;
 }
 
-.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, .navbar-link:not(.is-arrowless)::after {
+.navbar-link.is-active, .navbar-item:hover, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+  color: #ffc52c !important;
+  border-color: #ffc52c !important;
+  background-color: #f6f6f6 !important;
+}
+
+.navbar-link:not(.is-arrowless)::after {
   color: #ffc52c !important;
   border-color: #ffc52c !important;
 }
