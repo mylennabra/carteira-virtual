@@ -1,4 +1,4 @@
-# <img height="25px" src="https://cdn-icons-png.flaticon.com/512/214/214362.png"> Carteira Virtual
+# <img height="25px" src="https://user-images.githubusercontent.com/74362841/174929155-b8944164-2365-4770-bfe9-210d37a99aa4.png"> Carteira Virtual
 
 ![](https://img.shields.io/github/repo-size/mylennabra/carteira-virtual?color=%23ffc52c&label=repo-size&style=flat-square)
 ![](https://img.shields.io/github/languages/count/mylennabra/carteira-virtual?color=%23ffc52c&style=flat-square)
