@@ -45,7 +45,7 @@ const saveTransactions = () => {
     if (isValidTransaction()){
         const transaction = {
             name: document.getElementById('inputName').value,
-            price: currency(document.getElementById('inputPrice').value, { symbol: 'R$', decimal: ',', precision: 2, separator: '.', fromCents: true }).format(),
+            price: ('R$'+document.getElementById('inputPrice').value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })),
             date: moment(new Date(JSON.stringify(document.getElementById('inputDate').value))).format("DD/MM/yyyy") // date, Json, getElement, format
         }
         const index = document.getElementById('inputName').dataset.index // Pulling the data-index from the HTML
