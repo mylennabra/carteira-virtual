@@ -1,12 +1,12 @@
 'use strict'
 
 // Modal
-function openModal(ID){
+function openModal(){
     const modal = document.querySelector("#modalSection");
     modal.classList.add('mostrar');
 }
 
-function closeModal(ID){
+function closeModal(){
     const modal = document.querySelector("#modalSection");
     clearFields()
     modal.classList.remove('mostrar');
