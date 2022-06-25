@@ -45,7 +45,7 @@ const saveTransactions = () => {
     if (isValidTransaction()){
         const transaction = {
             name: document.getElementById('inputName').value,
-            price: ('R$'+document.getElementById('inputPrice').value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })),
+            price: (document.getElementById('inputPrice').value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })),
             date: moment(new Date(JSON.stringify(document.getElementById('inputDate').value))).format("DD/MM/yyyy") // date, Json, getElement, format
         }
         const index = document.getElementById('inputName').dataset.index // Pulling the data-index from the HTML
@@ -86,7 +86,7 @@ const createRow = (transaction, index) => {
     newRow.innerHTML = `
         <tr>
             <td class="tbody--cell">${transaction.name}</td>
-            <td class="tbody--cell">${transaction.price}</td>
+            <td class="tbody--cell">${'R$'+transaction.price}</td>
             <td class="tbody--cell">${transaction.date}</td>
             <td class="tbody--cell">
                 <div class="actbtn">
