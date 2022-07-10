@@ -1,3 +1,13 @@
+@-webkit-keyframes modal {
+  from {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
 @keyframes modal {
   from {
     transform: translate3d(0, -20px, 0);
@@ -22,12 +32,16 @@
 .body__header--title {
   color: black;
   font-size: 3rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .body__header--subtitle {
   color: #c58f00;
   font-size: 1rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .modalSection--content--header {
@@ -123,7 +137,8 @@ h1, h2, h3, h4, h5 {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, 1fr);
   row-gap: 1vh;
-  column-gap: 1vw;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
   padding: 20px;
 }
 
@@ -157,7 +172,11 @@ h1, h2, h3, h4, h5 {
   border-radius: 5px;
   color: black;
   font-size: 1rem;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
   min-height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
   max-width: 10vw;
   margin: 15px;
@@ -260,7 +279,9 @@ tbody {
   background-color: #f8b400;
   border: 2px solid black;
   border-radius: 5px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .thead--cell {
@@ -279,6 +300,8 @@ tbody {
   min-width: 100px;
 }
 .thead--cell:nth-child(4) {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
@@ -437,7 +460,8 @@ tbody {
 }
 
 .modalSection.mostrar {
-  animation: modal 1s;
+  -webkit-animation: modal 1s;
+          animation: modal 1s;
   display: flex;
 }
 
@@ -451,7 +475,6 @@ tbody {
   .body__header--subtitle {
     font-size: 0.7rem;
   }
-
   .main-content__table {
     font-size: 0.7rem;
   }
@@ -487,7 +510,6 @@ tbody {
   .body__header--subtitle {
     font-size: 0.8rem;
   }
-
   .main-content .thead--cell:nth-child(1) {
     min-width: 90px;
     max-width: 120px;
@@ -509,7 +531,6 @@ tbody {
   .body__header--subtitle {
     font-size: 1.2rem;
   }
-
   .main-content .thead--cell:nth-child(1) {
     min-width: 90px;
   }
@@ -522,7 +543,7 @@ tbody {
 }
 .footer {
   background-color: transparent !important;
-  color: #494949;
+  color: rgb(73, 73, 73);
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -597,5 +618,4 @@ table {
 .button {
   background-color: transparent !important;
 }
-
 /*# sourceMappingURL=main.css.map */
