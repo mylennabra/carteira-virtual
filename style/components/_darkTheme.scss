@@ -5,7 +5,7 @@
     transition: background-color 500ms ease !important;
 }
 
-.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, section{
+.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, section, .modalSection--content{
     @include transition();
 }
 
@@ -54,13 +54,14 @@
 
 @mixin darkTheme{
     background-color: darken(a.$bg-color3,89%)!important;
+    color:a.$bg-color3;
     .body{
         &__header--title{
             color: lighten(a.$text-color,90%);
         }
     }
 
-    .totalContainer, .graficoContainer, .main-content{
+    .totalContainer, .graficoContainer, .main-content, .modalSection--content{
         border: solid 3px darken(a.$bg-color3, 75%);
         // box-shadow: 2px 2px 5px darken(a.$bg-color3, 100%);
         box-shadow: none;
@@ -86,30 +87,31 @@
         }
     }
 
-    .main-content{
-        &__modalSection--content{
+
+    .modalSection--content{
+        background-color: darken(a.$bg-color3,60%);
+        border: solid 3px darken(a.$bg-color3, 75%);
+        &--header{
             background-color: darken(a.$bg-color3,60%);
-            border: solid 3px darken(a.$bg-color3, 75%);
-            &--header{
-                background-color: darken(a.$bg-color3,60%);
-                &--title{
-                    color: a.$bg-color3;
-                }
-                &--icon{
-                    color: a.$bg-color3;
-                    &:hover{
-                        color: lighten(black, 75%);
-                    }
-                }
-            }
-            &--form{
+            &--title{
                 color: a.$bg-color3;
-                &--fillField{
-                    background-color: darken(a.$bg-color3, 30%);
+            }
+            &--icon{
+                color: a.$bg-color3;
+                &:hover{
+                    color: lighten(black, 75%);
                 }
             }
         }
+        &--form{
+            color: a.$bg-color3;
+            &--fillField{
+                background-color: darken(a.$bg-color3, 30%);
+            }
+        }
+    }
 
+    .main-content{
         &__table{
             &--header--title{
                 color: a.$bg-color3;
@@ -120,20 +122,23 @@
                 }
             }
         }
-
+    
         .thead--cell{
             border: solid 1px darken(black,40%);
-
+    
         }
         .tbody--cell{
             color: a.$bg-color3;
             border-bottom: solid 1px a.$bg-color3;
         }
+        
+    
+        .labelc:hover{
+            background-color:darken(a.$bg-color3, 80%);
+        }
+
     }
 
-    .labelc:hover{
-        background-color:darken(a.$bg-color3, 80%);
-    }
 
 
     .footer{
