@@ -1,13 +1,3 @@
-@-webkit-keyframes modal {
-  from {
-    transform: translate3d(0, -20px, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
 @keyframes modal {
   from {
     transform: translate3d(0, -20px, 0);
@@ -32,16 +22,12 @@
 .body__header--title {
   color: black;
   font-size: 3rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .body__header--subtitle {
   color: #c58f00;
   font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .modalSection--content--header {
@@ -71,7 +57,7 @@
   color: #666666;
 }
 
-.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, section {
+.body, .body__header--title, .main-content__table, .main-content__table--header--title, path, section, .modalSection--content {
   transition: background-color 500ms ease !important;
 }
 
@@ -114,16 +100,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 html {
   width: 100vw !important;
   height: 100vh !important;
   overflow-y: hidden !important;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .body {
@@ -134,11 +117,11 @@ h1, h2, h3, h4, h5 {
 
 .mainContent {
   display: grid;
+  height: 80vh;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 3fr;
   row-gap: 1vh;
-  -moz-column-gap: 1vw;
-       column-gap: 1vw;
+  column-gap: 1vw;
   padding: 20px;
 }
 
@@ -151,7 +134,7 @@ h1, h2, h3, h4, h5 {
   background-color: white;
   grid-area: 1/1/2/2;
   width: 100%;
-  height: 37vh;
+  height: 27vh;
 }
 
 .graficoContainer {
@@ -163,7 +146,7 @@ h1, h2, h3, h4, h5 {
   background-color: white;
   grid-area: 2/1/3/2;
   width: 100%;
-  height: 37vh;
+  height: 47vh;
 }
 
 .btnn {
@@ -172,11 +155,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 5px;
   color: black;
   font-size: 1rem;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
   min-height: fit-content;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   max-width: 10vw;
   margin: 15px;
@@ -260,7 +239,14 @@ tbody {
   font-size: 2rem;
 }
 .main-content__table--content {
+  width: 100%;
   /*table body*/
+}
+.main-content__table--content--thead {
+  background-color: #f8b400;
+  border: 2px solid black;
+  border-radius: 5px;
+  user-select: none;
 }
 .main-content__table--content--tbody {
   /*table submission buttons cell*/
@@ -275,15 +261,6 @@ tbody {
 }
 
 /*table head*/
-.main-content__table--content--thead {
-  background-color: #f8b400;
-  border: 2px solid black;
-  border-radius: 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
 .thead--cell {
   background-color: unset;
   padding: 8px;
@@ -292,17 +269,19 @@ tbody {
 }
 .thead--cell:nth-child(1) {
   min-width: 100px;
+  width: 50%;
 }
 .thead--cell:nth-child(2) {
   min-width: 100px;
+  width: 20%;
 }
 .thead--cell:nth-child(3) {
   min-width: 100px;
+  width: 20%;
 }
 .thead--cell:nth-child(4) {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
+  width: 10%;
 }
 
 #scrollTable {
@@ -379,11 +358,12 @@ tbody {
 
 .changeThemeMixin {
   background-color: #161616 !important;
+  color: #f9f9f9;
 }
 .changeThemeMixin .body__header--title {
   color: #e6e6e6;
 }
-.changeThemeMixin .totalContainer, .changeThemeMixin .graficoContainer, .changeThemeMixin .main-content {
+.changeThemeMixin .totalContainer, .changeThemeMixin .graficoContainer, .changeThemeMixin .main-content, .changeThemeMixin .modalSection--content {
   border: solid 3px #3a3a3a;
   box-shadow: none;
   background-color: #474747;
@@ -405,26 +385,26 @@ tbody {
   background-color: #3f3f3f !important;
   color: #ffc52c !important;
 }
-.changeThemeMixin .main-content__modalSection--content {
+.changeThemeMixin .modalSection--content {
   background-color: #606060;
   border: solid 3px #3a3a3a;
 }
-.changeThemeMixin .main-content__modalSection--content--header {
+.changeThemeMixin .modalSection--content--header {
   background-color: #606060;
 }
-.changeThemeMixin .main-content__modalSection--content--header--title {
+.changeThemeMixin .modalSection--content--header--title {
   color: #f9f9f9;
 }
-.changeThemeMixin .main-content__modalSection--content--header--icon {
+.changeThemeMixin .modalSection--content--header--icon {
   color: #f9f9f9;
 }
-.changeThemeMixin .main-content__modalSection--content--header--icon:hover {
+.changeThemeMixin .modalSection--content--header--icon:hover {
   color: #bfbfbf;
 }
-.changeThemeMixin .main-content__modalSection--content--form {
+.changeThemeMixin .modalSection--content--form {
   color: #f9f9f9;
 }
-.changeThemeMixin .main-content__modalSection--content--form--fillField {
+.changeThemeMixin .modalSection--content--form--fillField {
   background-color: #adadad;
 }
 .changeThemeMixin .main-content__table--header--title {
@@ -440,7 +420,7 @@ tbody {
   color: #f9f9f9;
   border-bottom: solid 1px #f9f9f9;
 }
-.changeThemeMixin .labelc:hover {
+.changeThemeMixin .main-content .labelc:hover {
   background-color: #2d2d2d;
 }
 .changeThemeMixin .footer {
@@ -460,9 +440,10 @@ tbody {
 }
 
 .modalSection.mostrar {
-  -webkit-animation: modal 1s;
-          animation: modal 1s;
   display: flex;
+}
+.modalSection.mostrar .modalSection--content {
+  animation: modal 1s;
 }
 
 @media (max-width: 499px) {
@@ -475,6 +456,7 @@ tbody {
   .body__header--subtitle {
     font-size: 0.7rem;
   }
+
   .main-content__table {
     font-size: 0.7rem;
   }
@@ -510,6 +492,7 @@ tbody {
   .body__header--subtitle {
     font-size: 0.8rem;
   }
+
   .main-content .thead--cell:nth-child(1) {
     min-width: 90px;
     max-width: 120px;
@@ -531,6 +514,7 @@ tbody {
   .body__header--subtitle {
     font-size: 1.2rem;
   }
+
   .main-content .thead--cell:nth-child(1) {
     min-width: 90px;
   }
@@ -543,7 +527,7 @@ tbody {
 }
 .footer {
   background-color: transparent !important;
-  color: rgb(73, 73, 73);
+  color: #494949;
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -618,4 +602,5 @@ table {
 .button {
   background-color: transparent !important;
 }
+
 /*# sourceMappingURL=main.css.map */
