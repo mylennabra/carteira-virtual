@@ -39,7 +39,7 @@
                   </a>
           
                   <div class="navbar-dropdown">
-                    <a class="navbar-item">
+                    <a class="navbar-item" id="Add">
                       Adicionar gasto
                     </a>
                     <hr class="navbar-divider">
@@ -71,14 +71,19 @@
             <section class="totalContainer">
                 <div class="main-content__table--header">
                     <h1 class="main-content__table--header--title">Despesas Totais</h1>
-                    <div id="totalContainer">
-
-                    </div>
+                </div>
+                <div>
+                    <h1>
+                        R$ 0.000,00
+                    </h1>
                 </div>
             </section>
             <section class="graficoContainer">
                 <div class="main-content__table--header">
                     <h1 class="main-content__table--header--title">Categorias</h1>
+                </div>
+                <div>
+                    
                 </div>
             </section>
 
@@ -125,7 +130,7 @@
                                     <input type="text" data-index="new" class="modalSection--content--form--fillField" id="inputName" placeholder="Nome" required>
                                 
                                     
-                                    <label name="inputPrice">Valor: <p class="tip">Use ponto (.) no lugar de vírgula (,)</p></label>
+                                    <label name="inputPrice">Valor: </label>
                                     <input type="text" class="modalSection--content--form--fillField" id="inputPrice" placeholder="R$ 25,00" required>
                                 
                                 
@@ -135,8 +140,8 @@
                             </form>
 
                             <footer class="main-content__modalSection--footer">  
-                                <button type="button" class="btnn main-content__modalSection--content--footer--bottomButton" id="exitButton">Sair</button>
-                                <button type="button" id="saveButton" class="btnn main-content__modalSection--content--footer--bottomButton" ><i class="fas fa-check"></i> Salvar</button>
+                                <button type="button" class="btnn modalSection--content--footer--bottomButton" id="exitButton">Sair</button>
+                                <button type="button" id="saveButton" class="btnn modalSection--content--footer--bottomButton" ><i class="fas fa-check"></i> Salvar</button>
                             </footer>
                         </section>
                     </section>
