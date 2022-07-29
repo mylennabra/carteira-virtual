@@ -149,6 +149,9 @@ function changeThemeDark(){
 document.getElementById('registerButton')
     .addEventListener('click', openModal)
 
+document.getElementById('Add')
+    .addEventListener('click', openModal)
+
 document.getElementById('closeModal')
     .addEventListener('click', closeModal)
 
